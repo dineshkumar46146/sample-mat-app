@@ -1,0 +1,71 @@
+<br>
+<form class="example-form">
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="First Name" value="Sushi">
+  </mat-form-field>
+  
+
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Last Name" value="Khan"> 
+  </mat-form-field><br>
+  <mat-form-field>
+    <span>Date Of Birth</span>
+    <input matInput [matDatepicker]="picker" placeholder="">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field><br>
+
+  <span>EDUCATION QULAIFICATION : </span> 
+ 
+  <mat-checkbox>SSLC</mat-checkbox>&nbsp;
+  <mat-checkbox>HSC</mat-checkbox>&nbsp;
+  <mat-checkbox>UG</mat-checkbox>&nbsp;<br>
+  <br>
+
+  <span>GENDER  : </span> 
+  <mat-radio-group>
+      <mat-radio-button value="1" checked>Male</mat-radio-button>&nbsp;
+      <mat-radio-button value="2">Female</mat-radio-button>
+    </mat-radio-group>
+    
+
+</form>
+
+
+
+<!--<p>
+  body works!
+  
+    
+</p>
+<div class="example-container">
+  <mat-form-field>
+   <label>FIRST NAME : </label>   <input matInput placeholder="YOUR FIRST NAME" name="name">
+  </mat-form-field>
+  <mat-form-field>
+    <label>LAST NAME : </label>   <input matInput placeholder="YOUR FIRST NAME">
+   </mat-form-field>
+  
+   <mat-form-field>
+    <input matInput [matDatepicker]="picker" name="dateoFbIRTH" id="dateoFbIRTH" placeholder="Choose a date">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+
+ 
+
+  <mat-form-field>
+    <textarea matInput placeholder="Textarea"></textarea>
+  </mat-form-field>
+
+  
+<mat-checkbox>Check me!</mat-checkbox>
+<mat-slider></mat-slider>
+  </div>
+  <button type="button" class="btn btn-large btn-block btn-danger">button</button>
+
+<br>
+
+  -->
+
+

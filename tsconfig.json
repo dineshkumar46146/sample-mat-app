@@ -2,6 +2,9 @@
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
+    "types": [
+      "hammerjs"
+    ],
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
@@ -17,5 +20,6 @@
       "es2017",
       "dom"
     ]
+    
   }
 }
