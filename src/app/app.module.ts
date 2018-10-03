@@ -17,6 +17,9 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatSliderModule} from '@angular/material/slider';
 import {MatInputModule} from '@angular/material/input';
 import {MatRadioModule} from '@angular/material/radio';
+import { Link1Component } from './link1/link1.component';
+import { Link2Component } from './link2/link2.component';
+import { Link3Component } from './link3/link3.component';
 
 
 
@@ -26,7 +29,10 @@ import {MatRadioModule} from '@angular/material/radio';
     AppComponent,
     MyNavComponent,
     MyTableComponent,
-    BodyComponent
+    BodyComponent,
+    Link1Component,
+    Link2Component,
+    Link3Component
   ],
   imports: [
     BrowserModule,
