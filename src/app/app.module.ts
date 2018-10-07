@@ -20,6 +20,10 @@ import {MatRadioModule} from '@angular/material/radio';
 import { Link1Component } from './link1/link1.component';
 import { Link2Component } from './link2/link2.component';
 import { Link3Component } from './link3/link3.component';
+import {MatBottomSheetModule} from '@angular/material/bottom-sheet';
+import {MatStepperModule} from '@angular/material/stepper';
+import { UserComponent } from './user/user.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -32,12 +36,14 @@ import { Link3Component } from './link3/link3.component';
     BodyComponent,
     Link1Component,
     Link2Component,
-    Link3Component
+    Link3Component,
+    UserComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     LayoutModule,
+    FormsModule,
     MatToolbarModule,
     MatButtonModule,
     MatSidenavModule,
@@ -53,7 +59,9 @@ import { Link3Component } from './link3/link3.component';
    MatSliderModule ,
    MatNativeDateModule,
    MatInputModule,
-   MatRadioModule
+   MatRadioModule,
+   MatBottomSheetModule,
+   MatStepperModule
   ],
   providers: [
     MatDatepickerModule
