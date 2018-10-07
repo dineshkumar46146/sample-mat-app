@@ -7,7 +7,7 @@
         street2:<input type="text" name="street2" [(ngModel)]="user.address.street2">
         street3:<input type="text" name="street3" [(ngModel)]="user.address.street3"><br>
         <table>
-            <tr *ngFor="let phone of user.phone" >
+            <tr *ngFor="let phone of user.phone"let i = index; >
                 <td>
                     country:<input type="text" name="country" [(ngModel)]="user.phone.country">
                 </td>
@@ -17,7 +17,11 @@
                 <td>
                     type:<input type="text" name="type" [(ngModel)]="user.phone.type">
                 </td>
+                <td>
+                    <input type="button" name="remove phone" value="remove" (click)="removePhone(i)">
+                </td>
             </tr>
+            
         </table>
         <input *ngIf="user.phone.length < 5"  type="button" name="addphone" value="add" (click)="addPhone(1)">
         <br>

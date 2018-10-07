@@ -26,7 +26,9 @@ export class UserComponent implements OnInit {
       this.user.phone.push(new Phone());
     }
   }
-
+removePhone (index:number):void{
+  this.user.phone.splice(index,1);
+}
   ngOnInit() {
   this.userInit();
 
